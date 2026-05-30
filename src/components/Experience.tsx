@@ -8,7 +8,8 @@ export const Experience = () => {
             company: "Geotech Infoservices Private Limited",
             period: "AUG 2025 — PRESENT",
             desc: "Early-stage employee focused on Azure cloud migrations and monolithic refactoring to microservices.",
-            color: "bg-primary"
+            color: "bg-primary",
+            textColor: "text-primary"
         },
         {
             role: "Software Engineer Intern",
@@ -16,6 +17,7 @@ export const Experience = () => {
             period: "JAN 2025 — JUL 2025",
             desc: "Delivering award-winning Umbraco implementations for luxury automotive and fashion brands globally.",
             color: "bg-secondary",
+            textColor: "text-secondary",
             reverse: true
         },
         {
@@ -23,7 +25,8 @@ export const Experience = () => {
             company: "National Informatics Centre (NIC)",
             period: "JUL 2024 — NOV 2024",
             desc: "Pioneering distributed .NET systems processing high-frequency trading data for European markets.",
-            color: "bg-tertiary"
+            color: "bg-tertiary",
+            textColor: "text-tertiary"
         }
     ];
 
@@ -53,7 +56,7 @@ export const Experience = () => {
                         <div className="w-full md:w-1/2 md:px-12">
                             <div className={`liquid-glass p-6 rounded-2xl ${exp.reverse ? 'md:text-right' : ''}`}>
                                 <h3 className="text-xl font-bold text-on-surface">{exp.role}</h3>
-                                <p className={`${exp.color.replace('bg-', 'text-')} text-xs font-semibold mb-3`}>{exp.company}</p>
+                                <p className={`${exp.textColor} text-xs font-semibold mb-3`}>{exp.company}</p>
                                 <p className="text-on-surface-variant text-sm leading-relaxed">{exp.desc}</p>
                             </div>
                         </div>

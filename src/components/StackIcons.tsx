@@ -18,7 +18,7 @@ export const CsIcon = () => (
 export const NetIcon = () => (
     <svg className="w-8 h-8" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="64" cy="64" r="64" fill="url(#net-grad)" />
-        <text x="64" y="82" fill="white" fontSize="42" fontWeight="extrabold" textAnchor="middle" fontFamily="sans-serif">.NET</text>
+        <text x="64" y="82" fill="white" fontSize="42" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">.NET</text>
         <defs>
             <linearGradient id="net-grad" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#68217a" />

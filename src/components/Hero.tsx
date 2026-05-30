@@ -31,12 +31,15 @@ export const Hero = () => {
                     >
                         Explore My Work
                     </motion.a>
-                    <motion.button
+                    <motion.a
+                        href="/resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={{ backgroundColor: 'rgba(255,255,255,0.05)' }}
-                        className="px-8 py-4 rounded-full border border-white/10 font-bold text-xs tracking-widest uppercase text-on-surface"
+                        className="px-8 py-4 rounded-full border border-white/10 font-bold text-xs tracking-widest uppercase text-on-surface cursor-pointer"
                     >
                         Resume.pdf
-                    </motion.button>
+                    </motion.a>
                 </div>
             </motion.div>
         </section>

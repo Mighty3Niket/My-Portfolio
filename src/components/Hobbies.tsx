@@ -15,7 +15,7 @@ export const Hobbies = () => {
                     whileHover={{ y: -8, transition: { duration: 0.3 } }}
                     className="md:col-span-2 md:row-span-2 liquid-glass rounded-2xl overflow-hidden relative group cursor-pointer"
                 >
-                    <img className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 brightness-50" src="/images/sports.png" referrerPolicy="no-referrer" />
+                    <img className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 brightness-50" src="/images/sports.png" alt="Triniket's sports showcase with a wooden cricket bat, red ball, and football on green grass under spotlights" referrerPolicy="no-referrer" />
                     <div className="absolute bottom-6 left-6 z-10">
                         <span className="text-[10px] font-mono text-primary uppercase mb-2 block">Passion 01</span>
                         <h3 className="text-2xl font-bold">Sports (Cricket & Football)</h3>
@@ -31,7 +31,7 @@ export const Hobbies = () => {
                     whileHover={{ y: -8, transition: { duration: 0.3 } }}
                     className="md:col-span-2 liquid-glass rounded-2xl overflow-hidden relative group cursor-pointer"
                 >
-                    <img className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 brightness-50" src="/images/gaming.png" referrerPolicy="no-referrer" />
+                    <img className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 brightness-50" src="/images/gaming.png" alt="A premium dark-themed mechanical gaming keyboard and controller setup with neon lighting" referrerPolicy="no-referrer" />
                     <div className="absolute inset-0 flex items-center justify-center">
                         <h3 className="text-xl font-bold text-on-surface">Gaming</h3>
                     </div>
@@ -46,7 +46,7 @@ export const Hobbies = () => {
                     whileHover={{ y: -8, transition: { duration: 0.3 } }}
                     className="md:col-span-2 liquid-glass rounded-2xl overflow-hidden relative group cursor-pointer"
                 >
-                    <img className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 brightness-50" src="/images/travel.png" referrerPolicy="no-referrer" />
+                    <img className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 brightness-50" src="/images/travel.png" alt="A warm campfire glowing under a starry night sky in a scenic mountain valley" referrerPolicy="no-referrer" />
                     <div className="absolute inset-0 flex items-center justify-center">
                         <h3 className="text-xl font-bold text-on-surface">Travelling</h3>
                     </div>

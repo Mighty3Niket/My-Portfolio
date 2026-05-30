@@ -17,13 +17,14 @@ export const CTA = () => {
                 <p className="text-on-surface-variant max-w-xl mx-auto mb-12 text-lg opacity-70">
                     Currently accepting select engineering roles and architectural consultations.
                 </p>
-                <motion.button
+                <motion.a
+                    href="mailto:hello@esunny.maiti@gmail.com"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="px-10 py-5 rounded-full bg-primary text-surface font-black text-xs tracking-widest uppercase shadow-[0_0_40px_rgba(198,191,255,0.2)]"
+                    className="inline-block px-10 py-5 rounded-full bg-primary text-surface font-black text-xs tracking-widest uppercase shadow-[0_0_40px_rgba(198,191,255,0.2)] cursor-pointer"
                 >
                     Initiate Contact
-                </motion.button>
+                </motion.a>
             </motion.div>
         </section>
     );

@@ -47,7 +47,7 @@ export const Testimonials = () => {
                         <p className="text-on-surface-variant italic mb-8 text-sm leading-relaxed">"{r.text}"</p>
                         <div className="flex items-center gap-4">
                             <div className="w-10 h-10 rounded-full bg-white/10 overflow-hidden border border-white/20">
-                                <img className="w-full h-full object-cover grayscale" src={r.img} referrerPolicy="no-referrer" />
+                                <img className="w-full h-full object-cover grayscale" src={r.img} alt={`Portrait of ${r.name}`} referrerPolicy="no-referrer" />
                             </div>
                             <div>
                                 <div className="text-sm font-bold text-on-surface">{r.name}</div>
