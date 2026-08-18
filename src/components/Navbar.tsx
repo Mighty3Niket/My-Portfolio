@@ -5,8 +5,15 @@ export const Navbar = () => {
     return (
         <header className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-xl border-b border-white/5">
             <div className="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
-                <div className="text-xl font-black tracking-tighter text-primary font-headline uppercase">
-                    TRINIKET.DEV
+                <div className="flex items-center gap-5">
+                    <img 
+                        src="/images/logo.svg" 
+                        alt="Triniket.dev Logo" 
+                        className="w-9 h-9 object-contain filter drop-shadow-[0_0_8px_rgba(198,191,255,0.35)]" 
+                    />
+                    <span className="text-xl font-black tracking-tighter text-primary font-headline uppercase">
+                        TRINIKET.DEV
+                    </span>
                 </div>
                 <nav className="hidden md:flex items-center gap-8 font-headline tracking-tight font-extrabold uppercase text-xs">
                     {['About', 'Projects', 'Experience', 'Stack', 'Contact'].map((item) => (
