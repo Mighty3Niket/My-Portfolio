@@ -33,13 +33,13 @@ export const About = () => {
                     return;
                 }
             } else {
-                // Delete character
-                setDisplayedText(currentWord.slice(0, displayedText.length - 1));
                 if (displayedText.length === 0) {
                     setIsDeleting(false);
                     setCurrentIndex((prev) => (prev + 1) % GREETINGS.length);
                     return;
                 }
+                // Delete character
+                setDisplayedText(currentWord.slice(0, displayedText.length - 1));
             }
 
             const speed = isDeleting ? 60 : 120;

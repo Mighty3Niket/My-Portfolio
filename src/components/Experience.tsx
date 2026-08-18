@@ -90,7 +90,7 @@ export const Experience = () => {
                             <div className={`hidden md:block w-1/2 ${isReverse ? 'text-left pl-12' : 'text-right pr-12'}`}>
                                 <span className="text-primary font-mono text-sm font-semibold">{exp.period}</span>
                             </div>
-                            <div className={`absolute left-0 md:left-1/2 md:-translate-x-1/2 w-12 h-12 rounded-full z-10 flex items-center justify-center bg-surface/90 border-2 ${theme.borderColor} ${theme.textColor} group-hover:scale-110 group-hover:bg-surface transition-all duration-300 backdrop-blur-md ${theme.glowColor.split(' ')[0]}`} style={{ boxShadow: 'inherit' }}>
+                            <div className={`absolute left-0 md:left-1/2 md:-translate-x-1/2 w-12 h-12 rounded-full z-10 flex items-center justify-center bg-surface/90 border-2 ${theme.borderColor} ${theme.textColor} group-hover:scale-110 group-hover:bg-surface transition-all duration-300 backdrop-blur-md ${theme.glowColor.split(' ')[0]}`}>
                                 <IconComponent size={20} className="transition-transform duration-300 group-hover:scale-110" />
                             </div>
                             <div className="w-full md:w-1/2 md:px-12">
@@ -105,7 +105,7 @@ export const Experience = () => {
                                         <div className="flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity duration-300 flex items-center">
                                             <img
                                                 src={exp.logo}
-                                                alt={`${exp.company} Logo`}
+                                                alt=""
                                                 className="h-7 w-auto max-w-[110px] object-contain"
                                             />
                                         </div>
