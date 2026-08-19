@@ -8,9 +8,9 @@ export const MobileNav = () => {
         <nav className="md:hidden fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex gap-4 px-4 py-2 bg-zinc-900/40 backdrop-blur-2xl rounded-full border border-white/10 shadow-2xl min-w-[320px]">
             {[
                 { icon: <Home size={20} />, label: "Home", href: "/", id: "" },
-                { icon: <Code2 size={20} />, label: "Projects", href: "/projects", id: "projects" },
-                { icon: <Layers size={20} />, label: "Layers", href: "/experience", id: "experience" },
-                { icon: <MessageSquare size={20} />, label: "Message", href: "/contact", id: "contact" }
+                { icon: <Code2 size={20} />, label: "Projects", href: "/#projects", id: "projects" },
+                { icon: <Layers size={20} />, label: "Layers", href: "/#experience", id: "experience" },
+                { icon: <MessageSquare size={20} />, label: "Message", href: "/#contact", id: "contact" }
             ].map((item, i) => (
                 <a
                     key={i}

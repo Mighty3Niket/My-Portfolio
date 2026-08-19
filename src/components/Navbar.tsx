@@ -20,7 +20,7 @@ export const Navbar = () => {
                     {['About', 'Projects', 'Experience', 'Stack', 'Contact'].map((item) => (
                         <a
                             key={item}
-                            href={`/${item.toLowerCase()}`}
+                            href={`/#${item.toLowerCase()}`}
                             onClick={(e) => handleSmoothScroll(e, item.toLowerCase())}
                             className="text-on-surface-variant hover:text-on-surface transition-colors"
                         >

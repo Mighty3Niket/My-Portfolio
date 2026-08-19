@@ -25,7 +25,7 @@ export const Hero = () => {
                 </p>
                 <div className="flex items-center justify-center gap-6 pt-12">
                     <motion.a
-                        href="/projects"
+                        href="/#projects"
                         onClick={(e) => handleSmoothScroll(e, 'projects')}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
