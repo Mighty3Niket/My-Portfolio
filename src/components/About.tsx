@@ -14,6 +14,14 @@ const GREETINGS = [
     "こんにちは"     // Japanese
 ];
 
+const getGraphemes = (text: string): string[] => {
+    if (typeof Intl !== 'undefined' && (Intl as any).Segmenter) {
+        const segmenter = new (Intl as any).Segmenter(undefined, { granularity: 'grapheme' });
+        return Array.from(segmenter.segment(text), (segment: any) => segment.segment);
+    }
+    return Array.from(text);
+};
+
 export const About = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [displayedText, setDisplayedText] = useState("");
@@ -24,22 +32,26 @@ export const About = () => {
         const currentWord = GREETINGS[currentIndex];
 
         const handleTyping = () => {
+            const currentGraphemes = getGraphemes(currentWord);
+            const displayedGraphemes = getGraphemes(displayedText);
+            const displayedCount = displayedGraphemes.length;
+
             if (!isDeleting) {
-                // Type next character
-                setDisplayedText(currentWord.slice(0, displayedText.length + 1));
-                if (displayedText.length === currentWord.length) {
+                if (displayedCount === currentGraphemes.length) {
                     // Pause before deleting
                     timer = setTimeout(() => setIsDeleting(true), 2200);
                     return;
                 }
+                // Type next character
+                setDisplayedText(currentGraphemes.slice(0, displayedCount + 1).join(''));
             } else {
-                if (displayedText.length === 0) {
+                if (displayedCount === 0) {
                     setIsDeleting(false);
                     setCurrentIndex((prev) => (prev + 1) % GREETINGS.length);
                     return;
                 }
                 // Delete character
-                setDisplayedText(currentWord.slice(0, displayedText.length - 1));
+                setDisplayedText(currentGraphemes.slice(0, displayedCount - 1).join(''));
             }
 
             const speed = isDeleting ? 60 : 120;

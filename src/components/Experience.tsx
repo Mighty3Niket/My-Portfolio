@@ -72,7 +72,7 @@ export const Experience = () => {
             </div>
 
             <div className="relative max-w-4xl mx-auto space-y-12">
-                <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-white/10 to-transparent md:-translate-x-1/2" />
+                <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-[2px] bg-linear-to-b from-primary via-white/10 to-transparent md:-translate-x-1/2" />
 
                 {EXPERIENCES.map((exp, i) => {
                     const IconComponent = exp.icon;

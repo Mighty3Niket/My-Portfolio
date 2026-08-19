@@ -6,7 +6,7 @@ export const Navbar = () => {
     return (
         <header className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-xl border-b border-white/5">
             <div className="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
-                <a href="#" className="flex items-center gap-5 group/logo">
+                <a href="/" onClick={(e) => handleSmoothScroll(e)} className="flex items-center gap-5 group/logo">
                     <img 
                         src="/images/logo.svg" 
                         alt="" 
