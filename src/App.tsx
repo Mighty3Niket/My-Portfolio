@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
     Navbar,
     Hero,
@@ -19,6 +19,20 @@ import {
 } from './components';
 
 export default function App() {
+    useEffect(() => {
+        const hash = window.location.hash;
+        if (hash) {
+            const targetId = hash.substring(1);
+            const timer = setTimeout(() => {
+                const element = document.getElementById(targetId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 300);
+            return () => clearTimeout(timer);
+        }
+    }, []);
+
     return (
         <div className="min-h-screen relative">
             <div className="mesh-gradient" />

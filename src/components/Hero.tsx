@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { handleSmoothScroll } from '../utils/scroll';
 
 export const Hero = () => {
     return (
@@ -24,10 +25,11 @@ export const Hero = () => {
                 </p>
                 <div className="flex items-center justify-center gap-6 pt-12">
                     <motion.a
-                        href="#projects"
+                        href="/#projects"
+                        onClick={(e) => handleSmoothScroll(e, 'projects')}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="px-8 py-4 rounded-full bg-primary text-surface font-bold text-xs tracking-widest uppercase shadow-[0_0_30px_rgba(198,191,255,0.3)]"
+                        className="px-8 py-4 rounded-full bg-primary text-surface font-bold text-xs tracking-widest uppercase shadow-[0_0_30px_rgba(198,191,255,0.3)] cursor-pointer"
                     >
                         Explore My Work
                     </motion.a>
